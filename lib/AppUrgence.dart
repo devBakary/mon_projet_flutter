@@ -1,8 +1,19 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
+
+Future<void> makeCall(String url) async{
+  if(await canLaunch(url)){
+    await launch(url);
+  }
+  else{
+    throw "Nous ne pouvons pas lancer l'appel sur $url";
+  }
+}
 
 class Appel extends StatelessWidget {
   const Appel({Key? key}) : super(key: key);
+
 
   @override
   Widget build(BuildContext context) {
@@ -57,7 +68,7 @@ class Appel extends StatelessWidget {
                             minimumSize: Size(290, 50),
                             primary: Colors.redAccent,
                           ),
-                          onPressed: (){},
+                          onPressed: () =>makeCall('tel:+22390675432'),
                           child: Text("POLICE DE SECOURS", style: TextStyle(fontWeight: FontWeight.bold,
                               fontSize: 24),
                           ),
@@ -108,7 +119,7 @@ class Appel extends StatelessWidget {
                       children: [
                         ClipOval(
                           child:
-                          Image.asset("assets/images/urg.png",
+                          Image.asset("assets/images/gendarmerie.png",
                             width: 50,
                             height: 50,
                             fit: BoxFit.cover,),
@@ -142,7 +153,7 @@ class Appel extends StatelessWidget {
                       children: [
                         ClipOval(
                           child:
-                          Image.asset("assets/images/urg.png",
+                          Image.asset("assets/images/police.png",
                             width: 50,
                             height: 50,
                             fit: BoxFit.cover,),
@@ -177,7 +188,7 @@ class Appel extends StatelessWidget {
                       children: [
                         ClipOval(
                           child:
-                          Image.asset("assets/images/urg.png",
+                          Image.asset("assets/images/violence.png",
                             width: 50,
                             height: 50,
                             fit: BoxFit.cover,),

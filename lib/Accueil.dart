@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:mon_projet/AppUrgence.dart';
 
 class Accueil extends StatelessWidget {
   const Accueil({Key? key}) : super(key: key);
@@ -73,7 +74,13 @@ class Accueil extends StatelessWidget {
                           minimumSize: Size(280, 50),
                           primary: Colors.redAccent,
                         ),
-                        onPressed: (){},
+                        onPressed: (){
+                          Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (_) => Appel(),
+                              ),
+                          );
+                        },
                         child: Text("Appel d'Urgence", style: TextStyle(fontWeight: FontWeight.bold,
                             fontSize: 24),
                         ),
