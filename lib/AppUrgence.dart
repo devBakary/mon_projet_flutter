@@ -64,8 +64,8 @@ class Appel extends StatelessWidget {
 
                         ElevatedButton(
                           style: ElevatedButton.styleFrom(
-                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
-                            minimumSize: Size(290, 50),
+                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+                            minimumSize: Size(270, 50),
                             primary: Colors.redAccent,
                           ),
                           onPressed: () =>makeCall('tel:+22390675432'),
@@ -97,11 +97,11 @@ class Appel extends StatelessWidget {
 
                         ElevatedButton(
                           style: ElevatedButton.styleFrom(
-                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
-                            minimumSize: Size(290, 50),
+                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+                            minimumSize: Size(270, 50),
                             primary: Colors.redAccent,
                           ),
-                          onPressed: (){},
+                          onPressed: () =>makeCall('tel:+22390675432'),
                           child: Text("PROTECTION CIVILE", style: TextStyle(fontWeight: FontWeight.bold,
                               fontSize: 24),
                           ),
@@ -131,11 +131,11 @@ class Appel extends StatelessWidget {
 
                         ElevatedButton(
                           style: ElevatedButton.styleFrom(
-                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
-                            minimumSize: Size(290, 50),
+                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+                            minimumSize: Size(270, 50),
                             primary: Colors.redAccent,
                           ),
-                          onPressed: (){},
+                          onPressed: () =>makeCall('tel:+22390675432'),
                           child: Text("GENDARMERIE ", style: TextStyle(fontWeight: FontWeight.bold,
                               fontSize: 24),
                           ),
@@ -165,11 +165,11 @@ class Appel extends StatelessWidget {
 
                         ElevatedButton(
                           style: ElevatedButton.styleFrom(
-                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
-                            minimumSize: Size(290, 50),
+                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+                            minimumSize: Size(270, 50),
                             primary: Colors.redAccent,
                           ),
-                          onPressed: (){},
+                          onPressed: () =>makeCall('tel:+22390675432'),
                           child: Text("POLICE NATIONALE", style: TextStyle(fontWeight: FontWeight.bold,
                               fontSize: 24),
                           ),
@@ -200,11 +200,11 @@ class Appel extends StatelessWidget {
 
                         ElevatedButton(
                           style: ElevatedButton.styleFrom(
-                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
-                            minimumSize: Size(290, 50),
+                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+                            maximumSize: Size(270, 50),
                             primary: Colors.redAccent,
                           ),
-                          onPressed: (){},
+                          onPressed: () =>makeCall('tel:+22390675432'),
                           child: Text("VIOLENCE CONJUGALE", style: TextStyle(fontWeight: FontWeight.bold,
                               fontSize: 24),
                           ),

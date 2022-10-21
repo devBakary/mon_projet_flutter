@@ -11,11 +11,12 @@ class Accueil extends StatelessWidget {
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
 
+
         child: Column(
           children:[
             SizedBox(
-
-              width: 20,
+              height: 60,
+              width: 100,
             ),
 
             //l'image de la republique du Mali
@@ -49,8 +50,9 @@ class Accueil extends StatelessWidget {
 
             // Bouton pour l'appel d'urgence
             Container(
-
-              padding: EdgeInsets.only(left: 30, right: 20),
+              width: double.infinity,
+              margin: EdgeInsets.only(right: 20, left: 20),
+             // padding: EdgeInsets.only(left: 30, right: 20),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
@@ -70,8 +72,8 @@ class Accueil extends StatelessWidget {
 
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
-                          minimumSize: Size(280, 50),
+                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+                          minimumSize: Size(270, 50),
                           primary: Colors.redAccent,
                         ),
                         onPressed: (){
@@ -108,8 +110,8 @@ class Accueil extends StatelessWidget {
 
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
-                          minimumSize: Size(280, 50),
+                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+                          minimumSize: Size(270, 50),
                           primary: Colors.redAccent,
                         ),
                         onPressed: (){},
@@ -141,8 +143,8 @@ class Accueil extends StatelessWidget {
 
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
-                          minimumSize: Size(280, 50),
+                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+                          minimumSize: Size(270, 50),
                           primary: Colors.redAccent,
                         ),
                         onPressed: (){},
@@ -155,12 +157,12 @@ class Accueil extends StatelessWidget {
                   ),
 
                   SizedBox(
-                    height: 50,
+                    height: 100,
                   ),
 
                   Center(
                     child:
-                        Text("Copyright-2020", style: TextStyle(fontSize: 20),),
+                        Text("Copyright-2022", style: TextStyle(fontSize: 20),),
 
                     ),
                 ],
