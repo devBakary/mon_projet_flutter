@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mon_projet/Accueil.dart';
 
 import 'AppUrgence.dart';
+import 'Formulaire.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Accueil(),
+      home: const Formulaire(),
     );
   }
 }

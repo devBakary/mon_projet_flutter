@@ -31,14 +31,14 @@ class Appel extends StatelessWidget {
               Container(
                 margin: EdgeInsets.only(right: 20, left: 20),
                 width: 600,
-                height: 80,
+                height: 120,
                 color: Colors.black12,
 
 
               ),
 
               SizedBox(
-                height: 20,
+                height: 40,
               ),
 
               Container(
@@ -65,19 +65,19 @@ class Appel extends StatelessWidget {
                         ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-                            minimumSize: Size(270, 50),
+                            minimumSize: Size(290, 50),
                             primary: Colors.redAccent,
                           ),
                           onPressed: () =>makeCall('tel:+22390675432'),
                           child: Text("POLICE DE SECOURS", style: TextStyle(fontWeight: FontWeight.bold,
-                              fontSize: 24),
+                              fontSize: 18),
                           ),
                         ),
                       ],
                     ),
 
                     SizedBox(
-                      height: 20,
+                      height: 30,
                     ),
 
                     //Bouton de
@@ -98,12 +98,12 @@ class Appel extends StatelessWidget {
                         ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-                            minimumSize: Size(270, 50),
+                            minimumSize: Size(290, 50),
                             primary: Colors.redAccent,
                           ),
                           onPressed: () =>makeCall('tel:+22390675432'),
                           child: Text("PROTECTION CIVILE", style: TextStyle(fontWeight: FontWeight.bold,
-                              fontSize: 24),
+                              fontSize: 18),
                           ),
                         ),
                       ],
@@ -111,7 +111,7 @@ class Appel extends StatelessWidget {
 
 
                     SizedBox(
-                      height: 20,
+                      height: 30,
                     ),
 
                     //Bouton de
@@ -132,12 +132,12 @@ class Appel extends StatelessWidget {
                         ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-                            minimumSize: Size(270, 50),
+                            minimumSize: Size(290, 50),
                             primary: Colors.redAccent,
                           ),
                           onPressed: () =>makeCall('tel:+22390675432'),
                           child: Text("GENDARMERIE ", style: TextStyle(fontWeight: FontWeight.bold,
-                              fontSize: 24),
+                              fontSize: 18),
                           ),
                         ),
                       ],
@@ -145,7 +145,7 @@ class Appel extends StatelessWidget {
 
 
                     SizedBox(
-                      height: 20,
+                      height: 30,
                     ),
 
                     //Bouton de
@@ -166,12 +166,12 @@ class Appel extends StatelessWidget {
                         ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-                            minimumSize: Size(270, 50),
+                            minimumSize: Size(290, 50),
                             primary: Colors.redAccent,
                           ),
                           onPressed: () =>makeCall('tel:+22390675432'),
                           child: Text("POLICE NATIONALE", style: TextStyle(fontWeight: FontWeight.bold,
-                              fontSize: 24),
+                              fontSize: 18),
                           ),
                         ),
                       ],
@@ -179,7 +179,7 @@ class Appel extends StatelessWidget {
 
 
                     SizedBox(
-                      height: 20,
+                      height: 30,
                     ),
 
 
@@ -201,12 +201,12 @@ class Appel extends StatelessWidget {
                         ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-                            maximumSize: Size(270, 50),
+                            minimumSize: Size(290, 50),
                             primary: Colors.redAccent,
                           ),
                           onPressed: () =>makeCall('tel:+22390675432'),
                           child: Text("VIOLENCE CONJUGALE", style: TextStyle(fontWeight: FontWeight.bold,
-                              fontSize: 24),
+                              fontSize: 18),
                           ),
                         ),
                       ],
@@ -216,7 +216,13 @@ class Appel extends StatelessWidget {
               ),
 
               SizedBox(
-                height: 20,
+                height: 90,
+              ),
+
+              Center(
+                child:
+                Text("Copyright-2022", style: TextStyle(fontSize: 20),),
+
               ),
 
             ],

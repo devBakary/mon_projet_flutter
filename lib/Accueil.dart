@@ -45,7 +45,7 @@ class Accueil extends StatelessWidget {
             ),
 
             SizedBox(
-              height: 30,
+              height: 40,
             ),
 
             // Bouton pour l'appel d'urgence
@@ -73,7 +73,7 @@ class Accueil extends StatelessWidget {
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
                           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-                          minimumSize: Size(270, 50),
+                          minimumSize: Size(300, 50),
                           primary: Colors.redAccent,
                         ),
                         onPressed: (){
@@ -84,13 +84,13 @@ class Accueil extends StatelessWidget {
                           );
                         },
                         child: Text("Appel d'Urgence", style: TextStyle(fontWeight: FontWeight.bold,
-                            fontSize: 24),
+                            fontSize: 20),
                         ),
                       ),
                     ],
                   ),
                   SizedBox(
-                    height: 20,
+                    height: 30,
                   ),
 
                   // Bouton pour le contact d'urgence
@@ -111,19 +111,19 @@ class Accueil extends StatelessWidget {
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
                           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-                          minimumSize: Size(270, 50),
+                          minimumSize: Size(300, 50),
                           primary: Colors.redAccent,
                         ),
                         onPressed: (){},
                         child: Text("Contact d'Urgence", style: TextStyle(fontWeight: FontWeight.bold,
-                            fontSize: 24),
+                            fontSize: 20),
                         ),
                       ),
                     ],
                   ),
 
                   SizedBox(
-                    height: 20,
+                    height: 30,
                   ),
 
                   // Bouton Apropos
@@ -144,12 +144,12 @@ class Accueil extends StatelessWidget {
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
                           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-                          minimumSize: Size(270, 50),
+                          minimumSize: Size(300, 50),
                           primary: Colors.redAccent,
                         ),
                         onPressed: (){},
                         child: Text("Apropos", style: TextStyle(fontWeight: FontWeight.bold,
-                            fontSize: 24),
+                            fontSize: 20),
                         ),
                       ),
 
@@ -157,7 +157,7 @@ class Accueil extends StatelessWidget {
                   ),
 
                   SizedBox(
-                    height: 100,
+                    height: 180.0,
                   ),
 
                   Center(
