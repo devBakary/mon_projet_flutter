@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mon_projet/Accueil.dart';
 
 class Formulaire extends StatelessWidget {
 
@@ -9,21 +10,28 @@ class Formulaire extends StatelessWidget {
     return Scaffold(
 
       body: SingleChildScrollView(
+
         child: Container(
             padding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 5),
 
             child: Column(
-              // crossAxisAlignment: CrossAxisAlignment.stretch,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
                 Container(
                   margin: const EdgeInsets.all(0),
                   alignment: Alignment.topLeft,
-                /*  child:IconButton(
+                  child:IconButton(
                     alignment: Alignment.topRight,
                     iconSize: 40,
-                    onPressed: (){},
-                    icon: const Icon(Icons.arrow_circle_left),
-                  ),*/
+                    onPressed: (){
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (_) => Accueil(),
+                        ),
+                      );
+                    },
+                    icon: const Icon(Icons.subdirectory_arrow_left_rounded),
+                  ),
                 ),
 
                 Container(
@@ -43,24 +51,26 @@ class Formulaire extends StatelessWidget {
                       decoration:  BoxDecoration(
                         border: Border.all(color: Colors.red, width: 3),
                         shape: BoxShape.circle,
+                        color: Colors.black12
                       ),
                       child: const Icon(Icons.person, size: 60,),
 
                     ),
 
                     const SizedBox(width: 15.0,),
-                    SizedBox(
+                    Container(
+                      //padding: EdgeInsets.only(right: 20),
+                      alignment: Alignment.center,
                       height: 40,
-                      width: 250,
                       child:  ElevatedButton(
                         onPressed: (){},
                         style: ElevatedButton.styleFrom(
-                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30),
+                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)
                           ),
                           primary: Colors.redAccent,
                         ),
 
-                        child: const Text('Numero Urgent1',
+                        child: const Text('Numero Urgent',
                           style: TextStyle(fontSize: 20,
                               color: Colors.black,
                               fontWeight: FontWeight.bold),
@@ -80,15 +90,17 @@ class Formulaire extends StatelessWidget {
                   child: Row(
                     children: [
                       Container(
-                        decoration:  const BoxDecoration(
-                          // border: Border.all(color: Colors.amber, width: 5),
+                        alignment: Alignment.center,
+                        decoration:  BoxDecoration(
+                          border: Border.all(color: Colors.black38, width: 3),
                           shape: BoxShape.circle,
+                          color: Colors.black12,
                         ),
                         // padding: const EdgeInsets.all(50,),
                         // margin: const EdgeInsets.only(left: 10),
                         height: 70,
                         width: 70,
-                        child: const Icon(Icons.person_add, size: 70,),
+                        child: const Icon(Icons.person_add, size: 55,),
 
                       ),
 
