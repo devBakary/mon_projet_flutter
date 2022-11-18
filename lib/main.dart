@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mon_projet/Accueil.dart';
+import 'package:mon_projet/Splash.dart';
 
 import 'AppUrgence.dart';
 import 'Formulaire.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Accueil(),
+      home: const Splash(),
     );
   }
 }

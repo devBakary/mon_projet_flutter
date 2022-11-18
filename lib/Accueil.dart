@@ -10,20 +10,35 @@ class Accueil extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: SingleChildScrollView(
+      body: Container(
 
 
         child: Column(
           children:[
             SizedBox(
-              height: 60,
-              width: 100,
+              height: 35
             ),
 
             //l'image de la republique du Mali
             Container(
-              child:
-                    Image.asset("assets/images/repu.png", width: 600, height: 200 ),
+              decoration: BoxDecoration(
+                color: Colors.white70,
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey,
+                    spreadRadius: 2,
+                    blurRadius: 2,
+                    offset: Offset(0, 1), // changes position of shadow
+                  ),
+                ],
+
+              ),
+              padding: EdgeInsets.all(5),
+              height: 160,
+              child: Image.asset("assets/images/mali.png",
+                  width: MediaQuery.of(context).size.width * .90,
+                  height: 180
+              ),
             ),
 
             SizedBox(
@@ -32,15 +47,15 @@ class Accueil extends StatelessWidget {
 
             Container(
               height: 100,
-              width: double.infinity,
-              margin: EdgeInsets.only(right: 10, left: 10),
-              decoration: BoxDecoration(color: Colors.white,
+              width: MediaQuery.of(context).size.width * .92,
+              decoration: BoxDecoration(
+                color: Color(0XFFe6e6e6).withOpacity(0.9),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.grey.withOpacity(0.5),
-                    spreadRadius: 10,
-                    blurRadius: 80,
-                    offset: Offset(0, 3), // changes position of shadow
+                    color: Colors.grey,
+                    spreadRadius: 2,
+                    blurRadius: 2,
+                    offset: Offset(0, 1), // changes position of shadow
                   ),
                 ],
               ),
@@ -48,7 +63,7 @@ class Accueil extends StatelessWidget {
               child: Column(
 
                 children:[
-                  Text("Description: ",textAlign: TextAlign.start, style: TextStyle(),),
+                  Text("Description: ",textAlign: TextAlign.start,),
                   Text("Bienvenue dans l'application Urgence, l'application qu'il vous faut à tout moment!", textAlign: TextAlign.start,),
 
                 ],
@@ -82,21 +97,23 @@ class Accueil extends StatelessWidget {
                         width: 20,
                       ),
 
-                      ElevatedButton(
-                        style: ElevatedButton.styleFrom(
-                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-                          minimumSize: Size(250, 50),
-                          primary: Colors.redAccent,
-                        ),
-                        onPressed: (){
-                          Navigator.of(context).push(
-                              MaterialPageRoute(
-                                builder: (_) => Appel(),
-                              ),
-                          );
-                        },
-                        child: Text("Appel d'Urgence", style: TextStyle(fontWeight: FontWeight.bold,
-                            fontSize: 20),
+                      Expanded(
+                        child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+                            minimumSize: Size(250, 50),
+                            primary: Colors.redAccent,
+                          ),
+                          onPressed: (){
+                            Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (_) => Appel(),
+                                ),
+                            );
+                          },
+                          child: Text("Appel d'Urgence", style: TextStyle(fontWeight: FontWeight.bold,
+                              fontSize: 20),
+                          ),
                         ),
                       ),
                     ],
@@ -120,21 +137,23 @@ class Accueil extends StatelessWidget {
                         width: 20,
                       ),
 
-                      ElevatedButton(
-                        style: ElevatedButton.styleFrom(
-                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-                          minimumSize: Size(250, 50),
-                          primary: Colors.redAccent,
-                        ),
-                        onPressed: (){
-                          Navigator.of(context).push(
-                            MaterialPageRoute(
-                              builder: (_) => Formulaire(),
-                            ),
-                          );
-                        },
-                        child: Text("Contact d'Urgence", style: TextStyle(fontWeight: FontWeight.bold,
-                            fontSize: 20),
+                      Expanded(
+                        child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+                            minimumSize: Size(250, 50),
+                            primary: Colors.redAccent,
+                          ),
+                          onPressed: (){
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (_) => Formulaire(),
+                              ),
+                            );
+                          },
+                          child: Text("Contact d'Urgence", style: TextStyle(fontWeight: FontWeight.bold,
+                              fontSize: 20),
+                          ),
                         ),
                       ),
                     ],
@@ -159,15 +178,17 @@ class Accueil extends StatelessWidget {
                         width: 20,
                       ),
 
-                      ElevatedButton(
-                        style: ElevatedButton.styleFrom(
-                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-                          minimumSize: Size(250, 50),
-                          primary: Colors.redAccent,
-                        ),
-                        onPressed: (){},
-                        child: Text("Apropos", style: TextStyle(fontWeight: FontWeight.bold,
-                            fontSize: 20),
+                      Expanded(
+                        child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+                            minimumSize: Size(250, 50),
+                            primary: Colors.redAccent,
+                          ),
+                          onPressed: (){},
+                          child: Text("Apropos", style: TextStyle(fontWeight: FontWeight.bold,
+                              fontSize: 20),
+                          ),
                         ),
                       ),
 
@@ -175,12 +196,12 @@ class Accueil extends StatelessWidget {
                   ),
 
                   SizedBox(
-                    height: 180.0,
+                    height: MediaQuery.of(context).size.height * .10,
                   ),
 
                   Center(
                     child:
-                        Text("Copyright-2022", style: TextStyle(fontSize: 20),),
+                        Text("Copyright-2022", style: TextStyle(fontSize: 20, color: Colors.black),),
 
                     ),
                 ],
